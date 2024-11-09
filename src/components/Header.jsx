@@ -4,10 +4,10 @@ import Login from "./Login";
 
 export default function Header() {
 
-    const [isLogged, setIsLogged] = useState(false)
+    const [isLogged, setIsLogged] = useState(false);
 
     const handleLogin = () => {
-        setIsLogged(!isLogged)
+        setIsLogged(!isLogged);
     }
 
     return (
@@ -21,6 +21,7 @@ export default function Header() {
                         <li><NavLink to="/">Home</NavLink></li>
                         <li><NavLink to="/movies">Filmes</NavLink></li>
                         <li><NavLink to="/genre">Gêneros</NavLink></li>
+                        <li><NavLink to="/lists">Minhas Listas</NavLink></li>
                         <li><NavLink to="/contato">Contato</NavLink></li>
                         {isLogged && <li><NavLink to="/settings">Configurações</NavLink></li>}
                     </ul>
